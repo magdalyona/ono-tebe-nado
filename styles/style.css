@@ -66,9 +66,6 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
-}
-
-.aligned-text {
     text-align: left;
 }
 
@@ -108,7 +105,7 @@
     text-align: center;
     word-spacing: 18px;
     margin-left: 28px;
-    padding-top: 4px;
+    padding-top: 15px;
 }
 
 .bet-button {
@@ -169,7 +166,7 @@
     justify-content: space-between;
     background-position: center;
     color: #fff;
-    padding: 50px 40px;
+    padding: 50px 39px 48px;
     width: 334px;
     min-height: 563px;
 }
@@ -204,26 +201,18 @@
     z-index: 1;
 }
 
-.card__text {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 120%;
-    color: #fff;
-    z-index: 1;
-}
-
 .lots__look-more-link {
     font-weight: 400;
     font-size: 20px;
     color: #000;
     display: block;
     text-underline-position: under;
-    padding: 30px 820px 2px 40px;    
+    padding: 29px 820px 3px 40px;    
 }
 
 .about {
     display: grid;
-    padding: 24px 24px 180px 24px;
+    padding: 32px 24px 180px 24px;
     column-gap: 25px;
     grid-template-columns: 334px 1fr;
 }
@@ -248,8 +237,6 @@
     height: 114px;
 }
 
-
-
 .about__title {
     font-weight: 700;
     font-size: 40px;
@@ -265,15 +252,16 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 13px;
     grid-column-start: 2;
 }
 
 .footer {
-    padding: 1px 49px 88px;
+    padding: 0px 50px 89px;
     display: flex;
     justify-content: space-between;
-
+    align-items: start;
+    margin-top: -11px;
 }
 
 .footer__menu-list {
@@ -309,11 +297,11 @@ p {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 0.005em;
+    letter-spacing: 0.002em;
     color: #000;
     text-align: left;
     font-style: normal;
-    margin-bottom: 9px;   
+    margin-bottom: 13px;   
 }
 
 .address {
@@ -331,6 +319,15 @@ p {
     font-size: 18px;
     line-height: 135%;
     color: #000;
+    margin-bottom: 0;
+}
+
+.card__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #fff;
+    z-index: 1;
     margin-bottom: 0;
 }
 
