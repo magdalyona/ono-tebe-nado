@@ -1,11 +1,10 @@
 /* место для вашего кода */
 .header {
     display: grid;
-    padding: 91px 49px 89px;
+    padding: 92px 50px 93px;
     grid-template-columns: 1fr 148px 1fr;
     width: 100%;
     align-items: center;
-    min-height: 292px;
 }
 
 .header__links-list {
@@ -41,7 +40,6 @@
 .header__logo {
     display: block;
     width: 139px;
-    /* height: 111px;  */
 }
 
 .header__logo-image {
@@ -53,11 +51,10 @@
 .address {
     font-weight: 400;
     font-size: 18px;
-    font-style: inherit;
+    font-style: normal;
     justify-self: end;
     width: 240px;
-    line-height: 24.03px;
-    letter-spacing: 0.005em;
+    line-height: 135%;
 }
 
 .address__item {
@@ -72,19 +69,16 @@
     background-size: cover;
     background-position: center;
     width: 1100px;
-    height: 757px;
+    min-height: 757px;
     position: relative;
-    /* z-index: -1; */
 }
 
 .overlay {
     position: absolute;
-    top: 0px;
-    left: 0px;
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.6);
     top: 0;
     left: 0;
 }
@@ -159,9 +153,10 @@
     border: 1px #fff solid;
     color: #fff;
     width: 256px;
-    height: 54px;
+    min-height: 54px;
     padding: 14px 28px;
     /* color: inherit; */
+    cursor: pointer;
     background: transparent;
     transition: transform 0.4s ease;
 }
@@ -175,6 +170,8 @@
 .lots {
     width: 100%;
     padding: 179px 24px  146px 24px;
+
+    
 }
 
 .lots__heading {
@@ -185,6 +182,8 @@
     padding-left: 40px;
     padding-bottom: 27px;
     text-align: left;
+
+    
 }
 
 .lots__card-list {
@@ -195,6 +194,10 @@
     gap: 25px;
     /* height: 563px; */
     /* width: 100%; */
+    flex-wrap: wrap;
+     
+ 
+    
 }
 
 .lots__card-list-item {
@@ -203,6 +206,8 @@
 
     /* height: 100%; */
     /* list-style: none; */
+    
+ 
  }
 
 .card-link {
@@ -210,9 +215,13 @@
     /* height: 100%;
     width: 100%; */
     text-decoration: none;
+    
+
  }
 
 .card {
+    
+    
     position: relative;
     display: flex;
     flex-direction: column;
@@ -224,32 +233,30 @@
     /* gap: 30px; */
     padding: 50px 40px;
     width: 334px;
-    height: 563px;
+    min-height: 563px;
+    
+    
+
+
+}
+
+
+.card_type_film, .card_type_book, .card_type_picture {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .card_type_film {
     background-image: url("../images/card-lot-01.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
 }
 
 .card_type_book {
     background-image: url("../images/card-lot-02.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-
 }
 
 .card_type_picture {
     background-image: url("../images/card-lot-03.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
 }
 
 .card__title {
@@ -262,6 +269,7 @@
     text-decoration-skip-ink: none;
     color: #fff;
     z-index: 1;
+    
 
 }
 
@@ -273,6 +281,7 @@
     z-index: 1;
 
 
+
 }
 
 .lots__look-more-link {
@@ -282,11 +291,12 @@
     display: block;
     text-underline-position: under;
     padding: 30px 820px 2px 40px;
+    
 }
 
 .about {
     display: grid;
-    padding: 35px 24px 180px 24px;
+    padding: 24px 24px 180px 24px;
     column-gap: 25px;
     grid-template-columns: 334px 1fr;
 }
@@ -319,9 +329,9 @@
     text-transform: uppercase;
     color: #000;
     text-align: left;
-    padding-top: 103px;
+    padding-top: 100px;
     padding-bottom: 84px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .about__text {
@@ -332,7 +342,7 @@
     grid-column-start: 2;
 }
 
-.about__text__one {
+p {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -340,10 +350,10 @@
     color: #000;
     text-align: left;
     font-style: normal;
-    margin-bottom: 9px;
+    margin-bottom: 9px;   
 
 }
-
+/* 
 .about__text__two {
     font-weight: 400;
     font-size: 20px;
@@ -351,7 +361,7 @@
     color: #000;
     text-align: left;
     font-style: normal;
-}
+} */
 
 .footer {
     padding: 1px 49px 88px;
